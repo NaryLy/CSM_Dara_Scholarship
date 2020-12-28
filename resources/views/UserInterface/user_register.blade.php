@@ -8,6 +8,10 @@
 @endsection
 
 @section('post')
+@section('content')
+@include('layout.navbar')
+@include('layout.background_carousel')
+@include('layout.style_css')
 <style>
       .bg-register-image {
     background: url(https://www.insidehighered.com/sites/default/server_files/media/Nugent%20learning_0.jpg);
@@ -110,4 +114,5 @@
   
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
+    @include('layout.footer')
 @endsection
